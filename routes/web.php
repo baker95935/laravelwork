@@ -27,3 +27,4 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ($router)
 
 	$router->get('dash', 'DashboardController@index');
 });
+ 
