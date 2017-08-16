@@ -26,6 +26,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        dd('后台首页，当前用户名：'.auth('admin')->user()->name);
+        $username=auth('admin')->user()->name;
+        return view('admin.dashboard',compact('username',$username));
     }
 }
