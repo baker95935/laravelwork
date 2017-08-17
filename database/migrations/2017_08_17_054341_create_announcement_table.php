@@ -20,7 +20,6 @@ class CreateAnnouncementTable extends Migration
 			$table->text('body')->nullable()->comment('内容');
 			$table->integer('user_id')->comment('发布人');
 			$table->string('coverPic')->nullable()->comment('封面');
-			$table->integer('typeId')->comment('文章类型');
 			$table->timestamps();
 		});
     }

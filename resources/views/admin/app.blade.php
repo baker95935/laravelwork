@@ -50,6 +50,9 @@
 					    <ul class="nav navbar-nav">
 					    	<li><a href="/admin/admins">管理员管理</a></li>
 					    </ul>
+					      <ul class="nav navbar-nav">
+					    	<li><a href="/admin/announcements">管理员信息</a></li>
+					    </ul>
                     </ul>
 
                     <!-- Right Side Of Navbar -->

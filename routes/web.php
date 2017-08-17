@@ -26,5 +26,7 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ($router)
 	Route::resource('users', 'UsersController');
 	Route::resource('types', 'TypesController');
 	Route::resource('announcements', 'AnnouncementsController');
+	$router->post('announcements/delete', 'AnnouncementsController@delete');
+	
 });
  
