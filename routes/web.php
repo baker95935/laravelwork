@@ -14,6 +14,12 @@ Route::get('/', function () {
 });
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('rest/articleList', 'RestController@articleList');  
+Route::get('rest/typeList', 'RestController@typeList');  
+Route::get('rest/announcementList', 'RestController@announcementList'); 
+
+
 Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ($router)
 {
 	$router->get('login', 'LoginController@showLoginForm')->name('admin.login');
