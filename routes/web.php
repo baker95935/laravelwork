@@ -22,9 +22,14 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ($router)
 	$router->get('dash', 'DashboardController@index');
 	
 	Route::resource('articles', 'ArticlesController');
+	$router->post('articles/delete', 'ArticlesController@delete');
+	
 	Route::resource('admins', 'AdminsController');
 	Route::resource('users', 'UsersController');
+	
 	Route::resource('types', 'TypesController');
+	$router->post('types/delete', 'TypesController@delete');
+	
 	Route::resource('announcements', 'AnnouncementsController');
 	$router->post('announcements/delete', 'AnnouncementsController@delete');
 	
