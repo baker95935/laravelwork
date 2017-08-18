@@ -10,6 +10,12 @@ use App\Type;
 
 class TypesController extends Controller
 {
+	
+    public function __construct()
+    {
+        $this->middleware('auth.admin:admin');
+    }
+	
 	public function index()
 	{ 
 		return view('admin.type.index')->withTypes(DB::table('types')->orderBy('id', 'desc')->paginate(8));

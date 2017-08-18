@@ -25,7 +25,10 @@ Route::group(['prefix' => 'admin','namespace' => 'Admin'],function ($router)
 	$router->post('articles/delete', 'ArticlesController@delete');
 	
 	Route::resource('admins', 'AdminsController');
+	$router->post('admins/delete', 'AdminsController@delete');
+	
 	Route::resource('users', 'UsersController');
+	$router->post('users/delete', 'UsersController@delete');
 	
 	Route::resource('types', 'TypesController');
 	$router->post('types/delete', 'TypesController@delete');
