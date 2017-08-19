@@ -9,11 +9,18 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'IndexController@index')->name('index');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('index/tour', 'IndexController@tour');  
+Route::get('index/about', 'IndexController@about'); 
+Route::get('index/buyPrice', 'IndexController@buyPrice'); 
+Route::get('index/work', 'IndexController@work'); 
+Route::get('index/share', 'IndexController@share'); 
+
+Route::resource('home', 'HomeController');
+$router->post('home/delete', 'HomeController@delete');
 
 Route::get('rest/articleList', 'RestController@articleList');  
 Route::get('rest/typeList', 'RestController@typeList');  
