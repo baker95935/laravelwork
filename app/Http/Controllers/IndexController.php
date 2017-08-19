@@ -4,6 +4,12 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\DB;
+use App\Announcement;
+
+use App\Article;
+use App\Type;
+
 class IndexController extends Controller
 {
 	
@@ -33,13 +39,18 @@ class IndexController extends Controller
     //admin article
     public function work()
     {
-    	return view('work');
+    	return view('list')->withArticles(DB::table('announcements')->orderBy('id', 'desc')->paginate(8));
     }
     
     //people share
     public function share()
     {
-    	return view('share');
+    	return view('list')->withArticles(DB::table('articles')->orderBy('id', 'desc')->paginate(8));
+    }
+    
+    public function detail()
+    {
+    	return view('detail');
     }
     
 }

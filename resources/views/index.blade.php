@@ -57,12 +57,11 @@
 			<div class="container">
 				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 fh5co-logo">
 					<a href="#" class="js-fh5co-mobile-toggle fh5co-nav-toggle"><i></i></a>
-					<a href="#">TechGorilla</a>
+					<a href="{{ url('/') }}">TechGorilla</a>
 				</div>
 				<div class="col-lg-6 col-md-5 col-sm-5 text-center fh5co-link-wrap">
 					<ul data-offcanvass="yes">
-					    <li class="active"><a href="{{ url('/') }}">Index</a></li>
-						<li><a href="{{ url('index/tour') }}">Tour</a></li>
+						<li class="active"><a href="{{ url('index/tour') }}">Tour</a></li>
 						<li><a href="{{ url('index/work') }}">Gorilla's work</a></li>
 						<li><a href="{{ url('index/share') }}">Share</a></li>
 						<li><a href="{{ url('index/buyPrice') }}">Buy & Price</a></li>

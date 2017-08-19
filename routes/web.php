@@ -22,6 +22,8 @@ Route::get('index/share', 'IndexController@share');
 Route::resource('home', 'HomeController');
 $router->post('home/delete', 'HomeController@delete');
 
+Route::get('article/show/{id}', 'ArticleController@show');
+
 Route::get('rest/articleList', 'RestController@articleList');  
 Route::get('rest/typeList', 'RestController@typeList');  
 Route::get('rest/announcementList', 'RestController@announcementList'); 
