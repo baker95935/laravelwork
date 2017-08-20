@@ -26,7 +26,7 @@
                 {{ App\Type::find($article->typeId)->name }}
               </td>
               <td class="col-lg-4">
-                <a href="{{ URL('articles/show/'.$article->id) }}" target="_blank">
+                <a href="{{ URL('article/show/'.$article->id) }}" target="_blank">
                   {{ App\Article::find($article->id)->title }}
                 </a>
               </td>

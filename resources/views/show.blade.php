@@ -62,6 +62,27 @@
                     <li class="nav-item">
                         <a class="nav-link page-scroll" href="{{ url('index/about') }}">About</a>
                     </li>
+                    
+                      	 @if (Route::has('login'))
+		                    @if (Auth::check())
+		                        <li class="nav-item"><a class="nav-link page-scroll" href="{{ url('/home') }}">HomeCenter</a></li>
+		                           <li class="nav-item">
+                                        <a class="nav-link page-scroll" href="{{ route('logout') }}"
+                                            onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                            Logout
+                                        </a>
+
+                                        <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                            {{ csrf_field() }}
+                                        </form>
+                                    </li>
+		                    @else
+		    					<li class="nav-item"><a class="nav-link page-scroll" href="{{ url('/login') }}">Login</a></li>
+								<li class="nav-item"><a class="nav-link page-scroll" href="{{ url('/register') }}" class="call-to-action">Get Started</a></li>
+		                    @endif
+	            		@endif
+                    
                 </ul>
             </div>
         </div>
@@ -87,7 +108,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">
-                    {{ $article->body }}
+                    {!! $article->body !!}
     
                 </div>
             </div>

@@ -136,11 +136,11 @@
 						<div class="fh5co-post wow fadeInLeft"  data-wow-duration="1s" data-wow-delay="1.1s">
 							<div class="fh5co-post-image">
 								<div class="fh5co-overlay"></div>	
-								<div class="fh5co-category"><a href="#">Tutorial</a></div>	
+								<div class="fh5co-category"><a href="{{ URL('article/show/1') }}">Tutorial</a></div>	
 								<img src="images/img_same_dimension_2.jpg" alt="Image" class="img-responsive">
 							</div>
 							<div class="fh5co-post-text">
-								<h3><a href="#">How to Create Cards</a></h3>
+								<h3><a href="{{ URL('article/show/1') }}">How to Create Cards</a></h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts...</p>
 							</div>
 							<div class="fh5co-post-meta">
@@ -153,11 +153,11 @@
 						<div class="fh5co-post wow fadeInLeft"  data-wow-duration="1s" data-wow-delay="1.4s">
 							<div class="fh5co-post-image">
 								<div class="fh5co-overlay"></div>	
-								<div class="fh5co-category"><a href="#">Health</a></div>	
+								<div class="fh5co-category"><a href="{{ URL('article/show/2') }}">Health</a></div>	
 								<img src="images/img_same_dimension_3.jpg" alt="Image" class="img-responsive">
 							</div>
 							<div class="fh5co-post-text">
-								<h3><a href="#">Drinking Ginger and Lemon Tea</a></h3>
+								<h3><a href="{{ URL('article/show/2') }}">Drinking Ginger and Lemon Tea</a></h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts...</p>
 							</div>
 							<div class="fh5co-post-meta">
@@ -171,11 +171,11 @@
 						<div class="fh5co-post wow fadeInLeft"  data-wow-duration="1s" data-wow-delay="1.7s">
 							<div class="fh5co-post-image">
 								<div class="fh5co-overlay"></div>	
-								<div class="fh5co-category"><a href="#">Tips</a></div>	
+								<div class="fh5co-category"><a href="{{ URL('article/show/3') }}">Tips</a></div>	
 								<img src="images/img_same_dimension_4.jpg" alt="Image" class="img-responsive">
 							</div>
 							<div class="fh5co-post-text">
-								<h3><a href="#">4 Easy Steps to Create a Soup</a></h3>
+								<h3><a href="{{ URL('article/show/3') }}">4 Easy Steps to Create a Soup</a></h3>
 								<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts...</p>
 							</div>
 							<div class="fh5co-post-meta">

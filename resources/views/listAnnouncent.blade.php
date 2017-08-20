@@ -113,7 +113,7 @@
  @foreach ($articles as $article)
                 
                 <div class="post-preview">
-                    <a href="{{ URL('article/show/'.$article->id) }}">
+                    <a href="{{ URL('announcement/show/'.$article->id) }}">
                         <h2 class="post-title">
                             {{ $article->title }}
                         </h2>

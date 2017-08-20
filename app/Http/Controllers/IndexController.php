@@ -39,7 +39,7 @@ class IndexController extends Controller
     //admin article
     public function work()
     {
-    	return view('list')->withArticles(DB::table('announcements')->orderBy('id', 'desc')->paginate(8));
+    	return view('listAnnouncent')->withArticles(DB::table('announcements')->orderBy('id', 'desc')->paginate(8));
     }
     
     //people share

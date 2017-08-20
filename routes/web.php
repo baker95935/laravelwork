@@ -23,6 +23,7 @@ Route::resource('home', 'HomeController');
 $router->post('home/delete', 'HomeController@delete');
 
 Route::get('article/show/{id}', 'ArticleController@show');
+Route::get('announcement/show/{id}', 'AnnouncementController@show');
 
 Route::get('rest/articleList', 'RestController@articleList');  
 Route::get('rest/typeList', 'RestController@typeList');  
