@@ -542,6 +542,7 @@
 						<h3>About</h3>
 						<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
 						<p><a href="{{ url('index/about') }}" class="btn btn-success btn-sm btn-outline">I'm a button</a></p>
+						<p><a href="{{ url('admin/login') }}" class="btn btn-success btn-sm btn-outline">master login</a></p>		
 					</div>
 					<div class="clearfix visible-sm-block"></div>
 				</div>
